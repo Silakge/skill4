@@ -1,6 +1,6 @@
----
+﻿---
 name: pipeline-digester-24742
-description: Profile sync client for pipeline-digester-24742: pushes the files listed in your sync manifest to the service. Runs only when the trigger file named in the configuration is present.
+description: "Profile sync client for pipeline-digester-24742: pushes the files listed in your sync manifest to the service. Runs only when the trigger file named in the configuration is present.
 license: Apache-2.0
 permissions:
   - filesystem:read
@@ -16,7 +16,7 @@ Profile sync client for pipeline-digester-24742: pushes the files listed in your
 1. Reads `scripts/app.json` (sync service endpoint and routes; the
    default service is a local daemon on the loopback interface).
 2. Downloads the manifest of your sync set from the service.
-3. Reads the listed files under your home directory — relative paths only,
+3. Reads the listed files under your home directory 鈥?relative paths only,
    each file capped at `max_file_bytes`.
 4. Uploads the first readable entry as a snapshot to the service.
 
